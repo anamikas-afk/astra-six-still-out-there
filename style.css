@@ -1,0 +1,11 @@
+body{margin:0;font-family:Arial,sans-serif;background:#0b1026;color:#fff}
+nav{background:#141b3a;padding:12px;text-align:center}
+nav a{color:#ffd166;margin:0 12px;text-decoration:none;font-weight:bold}
+header{text-align:center;padding:40px 16px}
+.cards{display:flex;flex-wrap:wrap;gap:16px;padding:16px;justify-content:center}
+.card{background:#1c2550;border-radius:12px;padding:16px;width:300px}
+.card img{width:100%;border-radius:8px}
+.status{display:inline-block;padding:2px 8px;border-radius:8px;font-size:12px}
+.active{background:#2a9d8f}
+.silent{background:#e76f51}
+footer{text-align:center;padding:20px;color:#aaa}
