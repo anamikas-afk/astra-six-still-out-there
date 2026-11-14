@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html lang="en">  
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz - Still Out There</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<nav>
+<a href="index.html">Home</a>
+<a href="moon.html">Moon</a>    
+<a href="mars.html">Mars</a>    
+<a href="deepspace.html">Deep Space</a>    
+<a href="quiz.html">Quiz</a>  
+</nav>  
+<header>
+<h1>Space Hardware Quiz</h1>
+</header>  
+<div class="cards">
+<div class="card" id="box"></div></div>
+<footer>Team Astra Six | Images: NASA</footer>  
+<script>  const q = [    
+{t:"Which small NASA rover landed on Mars in 1997?",     
+o:["Curiosity","Sojourner","Spirit"], a:1},    
+{t:"Which helicopter flew on Mars?",     
+o:["Ingenuity","Voyager","Surveyor"], a:0},    
+{t:"Which spacecraft carries the Golden Record?",     
+o:["Opportunity","Apollo 11","Voyager 1"], a:2},    
+{t:"Which Apollo crew visited Surveyor 3 on the Moon?",     
+o:["Apollo 11","Apollo 17","Apollo 12"], a:2},    
+{t:"In which year did Pioneer 10 send its last signal?",     
+o:["1997","2003","2019"], a:1}
+];  
+let i = 0, s = 0;  
+function show() {    
+const b = document.getElementById("box");    
+if (i >= q.length) {      
+b.innerHTML = "<h3>Your score: " + s + "/" + q.length + "</h3>" +        
+"<p><button onclick='restart()'>Play again</button></p>";      
+return;    
+}    
+b.innerHTML = "<h3>" + q[i].t + "</h3>" +      
+q[i].o.map((x, k) =>        
+"<p><button onclick='pick(" + k + ")'>" + x + "</button></p>").join("");  
+}  
+function pick(k) { if (k === q[i].a) s++; i++; show(); }  
+function restart() { i = 0; s = 0; show(); }  
+show();  
+</script> 
+</body> 
+</html>
