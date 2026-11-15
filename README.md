@@ -6,8 +6,8 @@ Apps Challenge 2026 (Abandoned but not Forgotten).
 - Anamika S (team owner)
 - Anand PS
 - Akhil KV
-- Adish KV
-- Adinath A
+- Adhish KV
+- Adhinath A
 - Aji krishna S
 ## Live website
 https://anamikas-afk.github.io/astra-six-still-out-there/
